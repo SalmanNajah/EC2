@@ -1,0 +1,258 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOUDS | Department of CSE - Sahyadri</title>
+    <style>
+        @import url('https://googleapis.com');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Strict font variable assignment */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: -0.01em;
+        }
+
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+            --border: #000000;
+            --muted: #666666;
+            --surface-hover: #fafafa;
+            --dashed-line: #e5e5e5;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Institutional Top Banner Navigation */
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .brand-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+        }
+
+        .brand-subtitle {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: var(--muted);
+            text-transform: uppercase;
+        }
+
+        .user-meta {
+            text-align: right;
+        }
+
+        .user-name {
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--text);
+        }
+
+        /* Fluid Grid Framework */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .user-meta {
+                text-align: left;
+            }
+        }
+
+        /* Monochromatic Panels */
+        .panel {
+            border: 2px solid var(--border);
+            padding: 2rem;
+            background: var(--bg);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .panel-tag {
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            background: var(--text);
+            color: var(--bg);
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            letter-spacing: 0.1em;
+        }
+
+        .panel-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Content Formatting */
+        p.statement {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--text);
+            text-align: justify;
+        }
+
+        ul.points-list {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        ul.points-list li {
+            font-size: 0.9rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed var(--dashed-line);
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+
+        ul.points-list li:last-child {
+            border-bottom: none;
+        }
+
+        ul.points-list li::before {
+            content: "▪";
+            color: var(--text);
+            font-size: 0.8rem;
+            margin-top: 2px;
+        }
+
+        /* Bottom Section Banner Info */
+        footer {
+            border-top: 2px solid var(--border);
+            padding-top: 1.5rem;
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 0.02em;
+        }
+
+        .footer-links a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            border-bottom: 1px solid transparent;
+        }
+
+        .footer-links a:hover {
+            border-bottom-color: var(--text);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section Info -->
+        <header>
+            <div>
+                <div class="brand-title">CLOUDS_</div>
+                <div class="brand-subtitle">Computer Science & Engineering Student Association</div>
+            </div>
+            <div class="user-meta">
+                <div class="user-name">Salman Najah</div>
+                <div class="brand-subtitle">USN: 4SF23CS043</div>
+                <div class="brand-subtitle" style="margin-top: 0.2rem;">Sahyadri College of Engineering & Management</div>
+            </div>
+        </header>
+
+        <!-- Main Grid Layout -->
+        <main class="grid">
+            <!-- Panel 1: CSE Department Vision -->
+            <section class="panel">
+                <span class="panel-tag">Department</span>
+                <h2 class="panel-title">Vision Statement</h2>
+                <p class="statement">
+                    To be a premier center for excellence in Computer Science and Engineering education, research, and innovation, nurturing globally competent and ethical professionals to cater to the dynamic needs of industry and society.
+                </p>
+            </section>
+
+            <!-- Panel 2: CSE Department Mission -->
+            <section class="panel">
+                <span class="panel-tag">Department</span>
+                <h2 class="panel-title">Mission Roadmap</h2>
+                <ul class="points-list">
+                    <li>To provide quality technical education through innovative teaching-learning methodologies and state-of-the-art infrastructure.</li>
+                    <li>To foster research, consultancy, and innovation by collaborating with leading IT industries and research organizations.</li>
+                    <li>To inculcate leadership qualities, professional ethics, and lifelong learning behaviors among student cohorts.</li>
+                </ul>
+            </section>
+
+            <!-- Panel 3: Institution Vision -->
+            <section class="panel">
+                <span class="panel-tag">Institution</span>
+                <h2 class="panel-title">Institutional Vision</h2>
+                <p class="statement">
+                    To become a globally recognized premier institution by transforming learners into leaders, empowering them with cutting-edge technologies, professional competence, and human values to build a sustainable global ecosystem.
+                </p>
+            </section>
+
+            <!-- Panel 4: Institution Mission -->
+            <section class="panel">
+                <span class="panel-tag">Institution</span>
+                <h2 class="panel-title">Institutional Mission</h2>
+                <ul class="points-list">
+                    <li>To establish dynamic academic systems that promote experiential learning, logical inquiry, and interdisciplinary project collaboration.</li>
+                    <li>To bridge academia and enterprise domains through incubation centers, startup accelerators, and skill developmental panels.</li>
+                    <li>To promote community-centric engineering, environmental stewardship, and ethical governance in technological applications.</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer Footer Information Logs -->
+        <footer>
+            <div>&copy; 2026 CLOUDS. CSE_SAHYADRI. ALL RIGHTS RESERVED.</div>
+            <div class="footer-links">
+                <a href="https://sahyadri.edu.in" target="_blank">SAHYADRI.EDU.IN</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
