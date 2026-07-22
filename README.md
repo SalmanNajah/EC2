@@ -68,6 +68,10 @@ http://<PUBLIC_IP>
 
 If setup is correct, you should see the simple EC2 Apache sample page.
 
+### Sample output
+
+![EC2 Apache sample page](https://github.com/user-attachments/assets/8d935326-e213-484a-a8fd-3b44d737c0ac)
+
 ## 6) Troubleshooting
 
 - Check Apache status:
