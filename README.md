@@ -1,3 +1,6 @@
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/f0b021fa-b7eb-4033-b1b6-6329e012d16a" />
+
+
 # EC2 Setup with Apache on Linux
 
 This repository contains a simple HTML page (`index.html`) and a step-by-step guide to host it on an AWS EC2 Linux instance using Apache.
